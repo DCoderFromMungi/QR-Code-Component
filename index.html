@@ -5,24 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(212, 45%, 89%);
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .parentcontainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      background-color: hsl(0, 0%, 100%);
+      width: 200px;
+      height: 320px;
+      border-radius: 15px; 
+      text-align: center;
+      padding: 10px;
+    }
+
+    .QRImage{
+      margin-top: 10px;
+      width: 180px;
+      height: 200px;
+    }
+
+    .QRImage img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .heading {
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+   .subheading {
+      font-size: 12px;
+      font-weight: 400; 
+      color: hsl(216, 15%, 48%);
+      margin-top: 10px;
+    }
+
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="parentcontainer">
+    <div class="QRImage">
+      <img src="images\image-qr-code.png">
+    </div>
+    <div class="heading">    
+      Improve your front-end skills by building projects
+    </div>
+    <div class="subheading">    
+      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </div>
   </div>
 </body>
 </html>
